@@ -1,23 +1,19 @@
-# Bodega Run
+# Get the Milk
 
-<!-- ✏️ Replace everything in this file with YOUR game's info. Keep the headings. -->
+**Play it:** https://AxelDoesThings.github.io/get-the-milk/
 
-**Play it:** https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
-
-**Made by:** Mr. Cruz
+**Made by:** AxelC
 
 ## The game
-Mr. Cruz has $5 and a craving. Get him to the bodega without getting robbed on the way.
+Your Mom gave you $8 to go buy milk from the store. She said you could still buy yourself something at the store with the change. Try not to spend it all before you get the Milk.
 
 ## States
-- `walking` (start): heading down the block
-- `og`: talking to an OG
-- `bandit`: someone wants your money
-- `bodega` (end): made it
-- `broke` (end): out of money
+- `walking` (start): going from aisle to aisle
+- `item`: a chance to spend some of your money on a snack
+- `milk`: someone wants your money
+- `greedy` (end): you spent too much money before you bought the milk
 
 ## AI use
-None. <!-- If you used AI (ChatGPT, Claude, Gemini, Copilot…), say which one and what you used it for. -->
-
+None of the code is written by AI, Used ChatGPT to detect spelling errors and helping find errors when debugging.
 ---
 **What's in here:** `game.py` is the game. `index.html` is the web page that runs it. `mini-coi.js` is what lets `input()` work on GitHub Pages, so don't delete or rename it.
