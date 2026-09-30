@@ -1,5 +1,3 @@
-# ✏️ Replace EVERYTHING in this file with your own game from OnlineGDB.
-#    (Click the pencil icon, select all, paste, then Commit changes.)
 #Go Buy The Milk!
 
 def ask(prompt, options):
@@ -14,7 +12,7 @@ money = 8
 stop = 0
 bought_milk = None
 
-print("Your Mom gave you $8 to go buy milk from the store. She said you could still buy yourself something at the store with the change.")
+print("Your Mom gave you $8 to go buy milk from the store. She said you could still buy yourself something at the store with the change. Try not to spend to much money before you buy the milk.")
 
 while bought_milk == None:
     if state == "walking":
@@ -43,6 +41,7 @@ while bought_milk == None:
             print(f" You bought the {snack}!")
         stop += 1
     elif state == "milk":
+        state = "walking"
         if money >= 5:
             print("You had enough money to but the milk for $5")
             bought_milk = True
@@ -50,10 +49,10 @@ while bought_milk == None:
         else:
             print("You couldn't afford the milk, I wonder why?")
             bought_milk = False
-        state = "walking"
+            state = "greedy"
     print(f"\n[STATE: {state.upper()} | ${money}]")
     
-if bought_milk == False:
+if state == "greedy":
     print("Did you forget why you were here? \n Bad Ending")
 elif money == 0:
     print("You bought the milk! Just hope Mom doesn't ask for any change. \n Snack Ending")
